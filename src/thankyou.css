@@ -1,0 +1,11 @@
+.thankyou {
+    background: url(/images/thnkyou.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 410px;
+  padding-bottom: 190px;
+}

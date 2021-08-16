@@ -68,21 +68,21 @@
 
       <br/><br/>
       <div class="container">
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <form name="contact" method="POST" action="src/thankyou.html" data-netlify-recaptcha="true" data-netlify="true">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" name="name" class="form-control" id="name">
+            <input type="text" required name="name" class="form-control" id="name">
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" required name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea rows="6" name="message" class="form-control" id="message"></textarea>
+            <textarea rows="6" required spellcheck="true" maxlength="355" name="message" class="form-control" id="message"></textarea>
           </div>
-          <div data-netlify-recaptcha="true"></div>
+          <div required data-netlify-recaptcha="true"></div>
           <br/>
           <button type="submit" class="btn btn-primary form-control">Submit</button>
         </form>
